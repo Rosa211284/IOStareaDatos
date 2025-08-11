@@ -1,0 +1,58 @@
+import Foundation
+ 
+ 
+//int
+let rosa1: Int = 50
+let rosa2 = 123
+print(" rosa2 contiene \(type(of: rosa2))")
+ 
+//String
+let rosa3: String = "Rosa R"
+let rosa4 = "Rosa R2"
+print(" el nombre es \(type(of: rosa4))")
+ 
+//Double
+let rosa5: Double = 22.23
+let rosa6 = 21.23
+print(" rosa6 contiene \(type(of: rosa6))")
+ 
+//Boolean
+let rosa7: Bool = true
+let rosa8 = true
+print(" rosa8 contiene \(type(of: rosa8))")
+ 
+//float
+let rosa9: Float = 1.21
+let rosa10 = 12.21
+print(" rosa10 contiene \(type(of: rosa10))")
+ 
+ 
+//Constantes
+ 
+print("constantes--------------------------")
+ 
+ 
+//int
+var ros1: Int = 50
+var ros2 = 123
+print(" ros2 contiene \(type(of: ros2))")
+ 
+//String
+var ros3: String = "Rosa R"
+var ros4 = "Rosa R2"
+print(" el nombre es \(type(of: ros4))")
+ 
+//Double
+var ros5: Double = 22.23
+var ros6 = 21.23
+print(" ros6 contiene \(type(of: ros6))")
+ 
+//Boolean
+var ros7: Bool = true
+var ros8 = true
+print(" ros8 contiene \(type(of: ros8))")
+ 
+//float
+var ros9: Float = 1.21
+var ros10 = 12.21
+print(" ros10 contiene \(type(of: ros10))")
