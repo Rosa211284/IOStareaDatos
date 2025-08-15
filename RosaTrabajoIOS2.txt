@@ -1,0 +1,73 @@
+Rosa Trabajo IOS
+/*
+var numero_aleatorio = Int.random(in: 1...10)
+print("numero aleatorio \(numero_aleatorio)")
+*/
+print("Intenta pensar en que numero escogio la computadora cada intento fallido suma un punto menos a tu favor ")
+print("Que numero crees que sea..")
+ 
+var numero_aleatorio = Int.random(in: 1...10)
+print("El numero aleatior es \(numero_aleatorio)")
+ 
+ 
+//var respuesta: String? = readLine()
+//Convertirlo a int
+//var respuesta_valida: Int? = Int(respuesta!)
+ 
+ 
+//var respuesta: String = readLine()!
+ 
+var numero_valido: Int? = nil
+//?? asigna un valor en especifico
+//print ("------\(respuesta_valida ?? 8)<------------")
+ 
+//funcion regresa un Int
+func validar_entrada_a_numero() -> Int{ 
+    var entrada_del_usuario: String? = nil
+    while true{
+        print("por favor introduce un numero")
+        entrada_del_usuario = readLine()
+        if entrada_del_usuario == nil {
+            print("error detectado,")
+        }
+        numero_valido = Int(entrada_del_usuario!)
+        if numero_valido == nil {
+            print ("Lo que introduciste no fue un numero entero pliss usa numeros y no letras")
+        }
+        else{
+            return numero_valido!
+        }
+    }
+//return 0
+}
+var intentos = 0
+var respuesta_del_usuario = validar_entrada_a_numero()
+ 
+ 
+    
+while respuesta_del_usuario != numero_aleatorio {
+ 
+    
+    if(numero_aleatorio > respuesta_del_usuario){
+        print("El numero de la compu es mayor ")
+    }
+    else if(numero_aleatorio < respuesta_del_usuario){
+        print("El numero de la compu es menor ")
+    }
+    respuesta_del_usuario = validar_entrada_a_numero()
+    intentos += 1
+
+}
+if respuesta_del_usuario == numero_aleatorio{
+    print("Felicidades ganaste") }
+    print("Número de intentos: \(intentos)")
+
+
+ 
+
+/*
+print("resultado")
+//print ("------\(resultado ?? 8)<------------")
+
+ 
+*/
