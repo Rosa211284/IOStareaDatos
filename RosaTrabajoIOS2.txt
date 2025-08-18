@@ -1,6 +1,6 @@
 Rosa Trabajo IOS
 /*
-var numero_aleatorio = Int.random(in: 1...10)
+var numero_aleatorio = Int.random(in: 1...100)
 //print("numero aleatorio \(numero_aleatorio)")
 */
 print("Intenta pensar en que numero escogio la computadora cada intento fallido suma un punto menos a tu favor ")
