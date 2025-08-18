@@ -1,27 +1,12 @@
-Rosa Trabajo IOS
-/*
-var numero_aleatorio = Int.random(in: 1...100)
-//print("numero aleatorio \(numero_aleatorio)")
-*/
+
 print("Intenta pensar en que numero escogio la computadora cada intento fallido suma un punto menos a tu favor ")
 print("Que numero crees que sea..")
  
 var numero_aleatorio = Int.random(in: 1...100)
-print("El numero aleatior es \(numero_aleatorio)")
- 
- 
-//var respuesta: String? = readLine()
-//Convertirlo a int
-//var respuesta_valida: Int? = Int(respuesta!)
- 
- 
-//var respuesta: String = readLine()!
+
  
 var numero_valido: Int? = nil
-//?? asigna un valor en especifico
-//print ("------\(respuesta_valida ?? 8)<------------")
- 
-//funcion regresa un Int
+
 func validar_entrada_a_numero() -> Int{ 
     var entrada_del_usuario: String? = nil
     while true{
@@ -61,13 +46,3 @@ while respuesta_del_usuario != numero_aleatorio {
 if respuesta_del_usuario == numero_aleatorio{
     print("Felicidades ganaste") }
     print("Número de intentos: \(intentos)")
-
-
- 
-
-/*
-print("resultado")
-//print ("------\(resultado ?? 8)<------------")
-
- 
-*/
