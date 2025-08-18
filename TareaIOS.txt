@@ -23,7 +23,7 @@ print(" rosa8 contiene \(type(of: rosa8))")
  
 //float
 let rosa9: Float = 1.21
-let rosa10 = 12.21
+let rosa10 = Float(9.40)
 print(" rosa10 contiene \(type(of: rosa10))")
  
  
