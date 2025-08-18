@@ -54,5 +54,5 @@ print(" ros8 contiene \(type(of: ros8))")
  
 //float
 var ros9: Float = 1.21
-var ros10 = 12.21
+var ros10 = Float(9.40)
 print(" ros10 contiene \(type(of: ros10))")
