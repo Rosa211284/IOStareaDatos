@@ -1,0 +1,118 @@
+//Estructuras
+struct vincent_van_gogh{
+     let obra_destcada: String
+     let nacimiento: Int
+     let muerte: Int
+     let frase: String
+}
+struct Gustav_Klimt{
+     let obra_destcada: String
+     let nacimiento: Int
+     let muerte: Int
+     let frase: String
+}
+//Entrada a un museo datos y caracteristicas 7w7 funcion dar un horario sala y obra a ver con su respectivo artista, para despues poder hacerlo aleatorio
+//clases //////////////////////////////////////////////////////////////////////////
+
+class Artistas{
+    var nombre: String 
+    var apellido: String 
+    var ultima_obra: String
+    var año_muerte: Int
+    var nacimiento: Int
+
+
+    init(_ nombre: String, _ apellido: String, _ ultima_obra: String, _ año_muerte: Int, _ nacimiento:Int ){
+    self.nombre = nombre
+    self.apellido = apellido
+    self.ultima_obra = ultima_obra
+    self.año_muerte = año_muerte
+    self.nacimiento = nacimiento
+   
+    }
+}
+let Pintor = Artistas("Vincent" , "Van gogh", "Raíces de árbol", 1890 , 1953 )
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+class Museo{
+
+var lugar: String
+var numero_obras: Double
+var nombre_museo: String
+var id: Double
+
+init (_ lugar: String, _ numero_obras: Double, _ nombre_museo: String, _ id: Double){
+    self.lugar = lugar
+    self.numero_obras = numero_obras
+    self.nombre_museo = nombre_museo
+    self.id = id 
+}
+}
+let MuseoD = Museo("Paris Francia" , 300.000, "Louvre", 88 )
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+class Obra_arte{
+    var nombre_obra: String
+    var año_creacion: Double
+    var nom_artista: String
+    var frase2: String  
+    
+    init( _ nombre_obra: String, _ año_creacion: Double, _ nom_artista: String, _ frase2: String){
+    self.nombre_obra = nombre_obra
+    self.año_creacion = año_creacion
+    self.nom_artista = nom_artista
+    self.frase2 = frase2
+    }
+}
+let ObrasA = Obra_arte("La noche estrellada" , 18889, "Vincent van gogh", "Confieso que no sé por qué, pero mirar las estrellas siempre me hace soñar" )
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+class datos_personal{
+    var numero_empleados: Double
+    var horario: Double
+    var costo: Double
+    
+    init( _ numero_empleados: Double, _ horario:Double, _ costo: Double){
+        self.numero_empleados = numero_empleados
+        self.horario = horario
+        self.costo = costo
+    }
+}
+
+let DatosP = datos_personal( 100 , 9.00 , 538 )
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+class caracteristicas_museo{
+
+var num_salas: Double
+var colecciones: String
+var servicios: String
+var exposiciones_Temporales: String
+
+init(_ num_salas: Double, _ colecciones:String, _ servicios:String, _ exposiciones_Temporales: String){
+    
+    self.num_salas = num_salas
+    self.colecciones = colecciones
+    self.servicios = servicios
+    self.exposiciones_Temporales = exposiciones_Temporales
+}
+    
+}
+
+let carMuseo = caracteristicas_museo( 403 , "Impresionismo" , "Salas" , "Da vinci" )
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+print("Bienvenido al museo de \(MuseoD.nombre_museo) ")
+print("Tu horario de entrada es a las \(DatosP.horario) y el costo de entrada de \(DatosP.costo) ")
+print("Con la exposicion especial de \(carMuseo.exposiciones_Temporales) y la visita al cuadro \(ObrasA.nombre_obra) de ")
+print("El pintor \(Pintor.nombre) \(Pintor.apellido) con su frase celebre \(ObrasA.frase2)\n")
+print("Fin de la visita")
+
+
+
+
+
+
+
